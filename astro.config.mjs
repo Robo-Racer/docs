@@ -5,21 +5,20 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'RoboRacer',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/Robo-Racer',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'ESP32',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
+						{ label: 'User Interface', link: '/esp32/ui' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Portenta H7',
+					items: []
 				},
 			],
 		}),
